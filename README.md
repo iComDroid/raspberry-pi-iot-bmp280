@@ -47,8 +47,8 @@ python BMP.py
 ```
 
 ## Credits
-### [Milan Thapa](https://link2rn.me)
-Email: aryan@sochware.com  
+### [Milan Thapa](https://milanthapa.me)
+Email: hello@milanthapa.me  
 Linkedin: [link2rn](https://www.linkedin.com/in/link2rn/)  
 Twitter:  [link2rn](https://twitter.com/link2rn/)    
 #
