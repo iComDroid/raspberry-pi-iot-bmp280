@@ -16,11 +16,14 @@ import os
 import time
 
 # Azure IoT Hub
-URI='sochwarestation.azure-devices.net'
-KEY='2kT5rApjq3c7LQr/Tq35Of29gtp7/ddpIlgYfvkErEs='
-IOT_DEVICE_ID = 'sochware_station001'
-POLICY = 'iothubowner'
-
+URI='<AZURE_IOT_HUB_URI>'
+#sochwarestation.azure-devices.net
+KEY='<SECRET_TOKEN_KEY'
+#2kT5rApjq3c7LQr/Tq35Of29gtp7/ddpIlgYfvkErEs=
+IOT_DEVICE_ID = '<YOUR_NEW_DEVICE_ID>'
+#sochware_station001
+POLICY = '<IOT_POLICY>'
+#iothubowner
 def generate_sas_token():
     expiry=3600
     ttl = time.time() + expiry
@@ -75,13 +78,6 @@ if __name__ == '__main__':
         data=getData()
         send_message(token, data)
         time.sleep(1)
-#while True:
- #   data=getData()
-  #  sleep(1)
-   # for key,val in data.items():
-    #    print(key,"=>",val)
-    #print("================")
-    #print(getData())
 #print ('Temp      = {0:0.3f} deg C'.format(degrees))
 #print ('Pressure  = {0:0.2f} hPa'.format(hectopascals))
 #print ('Humidity  = {0:0.2f} %'.format(humidity))
